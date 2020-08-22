@@ -22,6 +22,9 @@ const mobile22augAPI = axios.create({
   baseURL: "https://mobile-22-aug-dev-9261.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+function newpluginxxxx_get__read() {
+  return newPluginXXXX.get(`/`)
+}
 function api_v1_customtext_list() {
   return mobile22augAPI.get(`/api/v1/customtext/`)
 }
@@ -89,6 +92,7 @@ function rest_auth_user_partial_update(requestBody) {
   return mobile22augAPI.patch(`/rest-auth/user/`, requestBody)
 }
 export const apiService = {
+  newpluginxxxx_get__read,
   api_v1_customtext_list,
   api_v1_customtext_read,
   api_v1_customtext_update,
