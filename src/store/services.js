@@ -1,4 +1,8 @@
 import axios from "axios"
+const newPluginXXXX = axios.create({
+  baseURL: "https://a.com",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const plugin21 = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7374/storyboard/8690/",
@@ -15,7 +19,7 @@ const plugin11 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile22augAPI = axios.create({
-  baseURL: "https://mobile-22-aug-dev-9261-prod.herokuapp.com/",
+  baseURL: "https://mobile-22-aug-dev-9261.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
